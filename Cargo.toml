@@ -1,5 +1,5 @@
 [package]
-name = "WarOfTheWorlds"
+name = "war_of_the_worlds"
 version = "0.1.0"
 edition = "2021"
 

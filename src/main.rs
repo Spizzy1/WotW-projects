@@ -91,7 +91,7 @@ fn run(terminal: &mut Terminal<CrosstermBackend<Stdout>>) -> Result<(), Box<dyn 
         else{
             text_render = &current_station[start_index..min(current_station.len(),((current_station.len()) * (start.elapsed()?.as_millis() as usize)/(day_length) as usize))];
         }
-        if start.elapsed()?.as_millis() > day_length + 1000{
+        if start.elapsed()?.as_millis() > day_length + day_length/10{
             start = SystemTime::now();
             day += 1;
             if day >= 3{
